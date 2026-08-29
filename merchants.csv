@@ -1,0 +1,81 @@
+merchant_id,business_type,pan_name,gst_name,bank_account_name,other_note,estimated_monthly_gmv,international_enabled,retry_count,status,timestamp
+mer_0001,wellness,Amber Organics Pvt Ltd,Amber Organics Pvt Ltd,Amber Organics Pvt Ltd,"business category flagged high-risk, needs manual review",249865.59,False,1,pending,2026-08-27 21:57:33
+mer_0002,wellness,Ashoka Electronics Pvt Ltd,Ashoka Electronics Pvt Ltd,Ashoka Electronics Pvt Ltd,"uploaded GST certificate is blurry, unreadable",1317274.65,False,0,pending,2026-08-21 21:57:33
+mer_0003,food_delivery,Vertex Apparel Pvt Ltd,Vertex Apparel Private Limited,Vertex Apparel LLP,,353185.02,False,0,pending,2026-08-28 13:57:33
+mer_0004,wellness,Ashoka Electronics Pvt Ltd,Ashoka Electronics Pvt Ltd,Ashoka Electronics Pvt Ltd,"merchant wants to accept international cards, module not enabled",945878.52,True,1,pending,2026-08-27 22:57:33
+mer_0005,retail,Vertex Apparel & Co,VAC & Co,Vertex Apparel & Co,,1423915.08,True,0,pending,2026-08-17 06:57:33
+mer_0006,logistics,Bluepeak Retail Private Limited,BRPL LLP,Bluepeak Retail Private Limited,,1289584.67,False,0,pending,2026-08-24 09:57:33
+mer_0007,education,Amber Organics LLP,Amber Organics LLP,Amber Organics LLP,,1471797.26,True,1,pending,2026-08-24 19:57:33
+mer_0008,electronics,Kite Studio & Co,Kite Studio & Co,Kite Studio & Co,"uploaded GST certificate is blurry, unreadable",112595.48,False,0,pending,2026-08-28 09:57:33
+mer_0009,wellness,Silverline Textiles LLP,Silverline Textiles LLP,Silverline Textiles LLP,,944761.11,False,0,pending,2026-08-17 22:57:33
+mer_0010,food_delivery,Orbit Fitness LLP,Orbit Fitness LLP,Orbit Fitness LLP,,477675.48,False,1,pending,2026-08-22 13:57:33
+mer_0011,logistics,Sunrise Traders Pvt Ltd,Sunrise Traders Pvt Ltd,Sunrise Traders Pvt Ltd,bank account not linked yet,794157.61,False,1,pending,2026-08-24 22:57:33
+mer_0012,e-commerce,Sunrise Traders Pvt Ltd,Sunrise Traders & Co,Sunrise Traders LLP,,622325.25,True,0,pending,2026-08-17 16:57:33
+mer_0013,electronics,Vertex Apparel & Co,Vertex Apparel & Co,Vertex Apparel & Co,,1295951.51,False,0,pending,2026-08-24 10:57:33
+mer_0014,logistics,Orbit Fitness & Co,Oribt Fitness & Co,Orbit Fitness & Co,,87979.65,False,0,pending,2026-08-26 14:57:33
+mer_0015,wellness,Greenline Logistics & Co,Greenline,Greenline Logistics & Co,,997681.4,True,1,pending,2026-08-17 11:57:33
+mer_0016,food_delivery,Nimbus Foods Enterprises,Nimbus,Nimbus Foods Enterprises,,1078963.89,False,0,pending,2026-08-14 22:57:33
+mer_0017,logistics,Kite Studio Private Limited,Kite Studio Private Limited,Kite Studio Private Limited,,1804247.47,False,0,pending,2026-08-26 13:57:33
+mer_0018,e-commerce,Coral Handicrafts Pvt Ltd,Coral Handicrafts Private Limited,Coral Handicrafts Pvt Ltd,,1430289.85,True,0,pending,2026-08-15 14:57:33
+mer_0019,education,Coral Handicrafts Pvt Ltd,Coral Handicrafts LLP,Coral Handicrafts Private Limited,,308008.11,False,1,pending,2026-08-20 00:57:33
+mer_0020,e-commerce,Greenline Logistics Enterprises,Greenline,Greenline Logistics Enterprises,,239015.09,False,1,pending,2026-08-23 01:57:33
+mer_0021,wellness,Kite Studio Pvt Ltd,Kite Studio Pvt Ltd,Kite Studio Pvt Ltd,,711640.08,False,0,pending,2026-08-26 09:57:33
+mer_0022,electronics,Orbit Fitness Enterprises,Orbit Fitness Enterprises,Orbit Fitness Enterprises,bank account not linked yet,1850367.92,False,1,pending,2026-08-28 14:57:33
+mer_0023,electronics,Amber Organics & Co,Amber,Amber Organics & Co,,1704956.68,True,1,pending,2026-08-22 09:57:33
+mer_0024,electronics,Ashoka Electronics Pvt Ltd,Ashoka Electronics Pvt Ltd,Ashoka Electronics Pvt Ltd,business address field left blank,1581002.25,False,2,pending,2026-08-17 22:57:33
+mer_0025,wellness,Amber Organics Enterprises,Amber Organics Enterprises,Amber Organics Enterprises,"uploaded GST certificate is blurry, unreadable",661529.38,True,1,pending,2026-08-20 23:57:33
+mer_0026,electronics,Nimbus Foods Pvt Ltd,Nimbus,Nimbus Foods Pvt Ltd,,412358.67,False,2,pending,2026-08-16 08:57:33
+mer_0027,education,Ashoka Electronics Pvt Ltd,Ahsoka Electronics Pvt Ltd,Ashoka Electronics Pvt Ltd,,1209312.35,False,1,pending,2026-08-18 21:57:33
+mer_0028,food_delivery,Silverline Textiles & Co,Silverline Textiles & Co,Silverline Textiles & Co,"merchant wants to accept international cards, module not enabled",821782.4,False,0,pending,2026-08-22 05:57:33
+mer_0029,e-commerce,Bluepeak Retail Pvt Ltd,Bluepeak Retail Pvt Ltd,Bluepeak Retail Pvt Ltd,,1098387.09,False,0,pending,2026-08-15 04:57:33
+mer_0030,wellness,Bluepeak Retail Private Limited,Bluepeak Retail Private Limited,Bluepeak Retail Private Limited,"merchant wants to accept international cards, module not enabled",1643353.06,False,2,pending,2026-08-28 11:57:33
+mer_0031,retail,Vertex Apparel Pvt Ltd,Vertxe Apparel Pvt Ltd,Vertex Apparel Pvt Ltd,,581079.01,False,2,pending,2026-08-24 09:57:33
+mer_0032,e-commerce,Amber Organics LLP,Amber Organics LLP,Amber Organics LLP,,1286854.67,False,0,pending,2026-08-29 05:57:33
+mer_0033,education,Nimbus Foods LLP,Nimbus Foods LLP,Nimbus Foods LLP,,68855.91,True,2,pending,2026-08-15 11:57:33
+mer_0034,logistics,Orbit Fitness Pvt Ltd,Obrit Fitness Pvt Ltd,Orbit Fitness Pvt Ltd,,298518.76,False,0,pending,2026-08-15 04:57:33
+mer_0035,education,Greenline Logistics Private Limited,Greenline Logistics Private Limited,Greenline Logistics Private Limited,,1511481.34,False,0,pending,2026-08-16 10:57:33
+mer_0036,logistics,Nimbus Foods Enterprises,Nimbus Foods Enterprises,Nimbus Foods Enterprises,,1614358.52,False,0,pending,2026-08-25 10:57:33
+mer_0037,retail,Kite Studio Pvt Ltd,Kite Studio Pvt Ltd,Kite Studio Pvt Ltd,bank account not linked yet,1642343.88,False,0,pending,2026-08-16 08:57:33
+mer_0038,electronics,Greenline Logistics Pvt Ltd,Greenline Logistics Enterprises,Greenline Logistics Pvt Ltd,,185370.47,False,0,pending,2026-08-18 23:57:33
+mer_0039,education,Ashoka Electronics & Co,Ashoka Electronics & Co,Ashoka Electronics & Co,"merchant wants to accept international cards, module not enabled",1926941.92,False,0,pending,2026-08-20 02:57:33
+mer_0040,education,Coral Handicrafts LLP,Coral Handicrafts LLP,Coral Handicrafts LLP,,420653.61,True,1,pending,2026-08-28 23:57:33
+mer_0041,wellness,Orbit Fitness Private Limited,Orbit Fitness Private Limited,Orbit Fitness Private Limited,"merchant wants to accept international cards, module not enabled",1703629.8,False,0,pending,2026-08-21 06:57:33
+mer_0042,retail,Amber Organics Enterprises,Amber Organics Enterprises,Amber Organics Enterprises,,869870.35,False,2,pending,2026-08-18 10:57:33
+mer_0043,food_delivery,Silverline Textiles & Co,Silverline Textiles & Co,Silverline Textiles & Co,,459856.24,False,1,approved,2026-08-19 05:57:33
+mer_0044,wellness,Meridian Books Enterprises,Meridian Books Enterprises,Meridian Books Enterprises,bank account not linked yet,215351.3,False,2,pending,2026-08-20 05:57:33
+mer_0045,e-commerce,Bluepeak Retail Private Limited,Bluepeak Retail Private Limited,Bluepeak Retail Private Limited,,140116.75,False,1,pending,2026-08-16 13:57:33
+mer_0046,wellness,Meridian Books Enterprises,Mreidian Books Enterprises,Meridian Books Enterprises,,1407890.79,False,0,pending,2026-08-26 19:57:33
+mer_0047,electronics,Kite Studio Pvt Ltd,Kite,Kite Studio Pvt Ltd,,879035.08,True,2,pending,2026-08-21 01:57:33
+mer_0048,electronics,Sunrise Traders & Co,Sunrise Traders & Co,Sunrise Traders & Co,,956054.31,False,1,pending,2026-08-20 05:57:33
+mer_0049,electronics,Meridian Books & Co,Merdiian Books & Co,Meridian Books & Co,,1818366.72,False,0,pending,2026-08-18 00:57:33
+mer_0050,logistics,Meridian Books LLP,Meridian Books LLP,Meridian Books LLP,,1272159.45,False,0,pending,2026-08-18 06:57:33
+mer_0051,retail,Greenline Logistics LLP,Greenline Logistics LLP,Greenline Logistics LLP,,500959.89,False,2,approved,2026-08-26 13:57:33
+mer_0052,electronics,Ashoka Electronics Enterprises,Ashoka Electronics Enterprises,Ashoka Electronics Enterprises,,869279.86,False,1,approved,2026-08-18 15:57:33
+mer_0053,logistics,Silverline Textiles Enterprises,Silverline Textiles Enterprises,Silverline Textiles Enterprises,,1714223.5,False,1,pending,2026-08-20 16:57:33
+mer_0054,food_delivery,Kite Studio & Co,Kite Studio & Co,Kite Studio & Co,,899880.15,True,0,pending,2026-08-18 18:57:33
+mer_0055,education,Ashoka Electronics Private Limited,Ashoka,Ashoka Electronics Private Limited,,1091541.08,False,1,pending,2026-08-19 18:57:33
+mer_0056,e-commerce,Sunrise Traders Pvt Ltd,Sunrise Traders Private Limited,Sunrise Traders Private Limited,,557304.81,False,1,pending,2026-08-24 05:57:33
+mer_0057,e-commerce,Ashoka Electronics LLP,Ashoka Electronics LLP,Ashoka Electronics LLP,,967098.33,False,0,pending,2026-08-24 08:57:33
+mer_0058,retail,Amber Organics Pvt Ltd,Amber Organics Pvt Ltd,Amber Organics Private Limited,,1686496.25,False,0,pending,2026-08-27 00:57:33
+mer_0059,food_delivery,Amber Organics Pvt Ltd,Amber Organics Private Limited,Amber Organics Pvt Ltd,,1545451.29,True,1,pending,2026-08-17 17:57:33
+mer_0060,education,Bluepeak Retail Private Limited,Bluepeak,Bluepeak Retail Private Limited,,100072.93,False,2,pending,2026-08-15 03:57:33
+mer_0061,e-commerce,Ashoka Electronics Private Limited,Ashoka Electronics Private Limited,Ashoka Electronics Private Limited,,1409526.35,False,2,pending,2026-08-20 12:57:33
+mer_0062,education,Silverline Textiles Pvt Ltd,Silverline Textiles Pvt Ltd,Silverline Textiles Pvt Ltd,,1312709.35,True,1,pending,2026-08-16 00:57:33
+mer_0063,logistics,Bluepeak Retail Enterprises,Bluepeka Retail Enterprises,Bluepeak Retail Enterprises,,1429251.86,False,2,pending,2026-08-20 19:57:33
+mer_0064,logistics,Vertex Apparel & Co,Veretx Apparel & Co,Vertex Apparel & Co,,899370.26,False,0,pending,2026-08-24 08:57:33
+mer_0065,electronics,Bluepeak Retail LLP,Bluepeak,Bluepeak Retail LLP,,956181.51,False,1,pending,2026-08-24 15:57:33
+mer_0066,food_delivery,Meridian Books LLP,Meridian Books LLP,Meridian Books LLP,"merchant wants to accept international cards, module not enabled",1766623.96,False,0,pending,2026-08-21 15:57:33
+mer_0067,electronics,Orbit Fitness Private Limited,Orbit Fitness Private Limited,Orbit Fitness Private Limited,,518631.68,False,2,pending,2026-08-22 01:57:33
+mer_0068,wellness,Sunrise Traders Pvt Ltd,Sunrise Traders Pvt Ltd,Sunrise Traders Pvt Ltd,,1184033.39,False,1,pending,2026-08-24 02:57:33
+mer_0069,food_delivery,Kite Studio & Co,Kite Studio & Co,Kite Studio & Co,,499549.18,False,0,pending,2026-08-27 16:57:33
+mer_0070,education,Orbit Fitness Private Limited,Orbit Fitness Private Limited,Orbit Fitness Private Limited,,1954383.69,False,0,pending,2026-08-28 09:57:33
+mer_0071,e-commerce,Vertex Apparel Private Limited,Vertex Apparel Private Limited,Vertex Apparel Private Limited,"crypto-adjacent business model, requires compliance sign-off",1949875.12,False,2,pending,2026-08-26 19:57:33
+mer_0072,logistics,Meridian Books Pvt Ltd,Meirdian Books Pvt Ltd,Meridian Books Pvt Ltd,,983492.71,False,0,pending,2026-08-25 00:57:33
+mer_0073,retail,Bluepeak Retail Pvt Ltd,Bluepeak Retail Pvt Ltd,Bluepeak Retail Pvt Ltd,"uploaded GST certificate is blurry, unreadable",1631727.05,False,0,pending,2026-08-26 12:57:33
+mer_0074,education,Orbit Fitness Enterprises,Orbit Fitness Enterprises,Orbit Fitness Enterprises,,791737.15,False,0,pending,2026-08-15 21:57:33
+mer_0075,electronics,Ashoka Electronics LLP,Ashoka Electronics LLP,Ashoka Electronics LLP,,455186.42,False,2,pending,2026-08-28 10:57:33
+mer_0076,logistics,Greenline Logistics Private Limited,Greenline Logistics Private Limited,Greenline Logistics Private Limited,,1394273.71,False,0,pending,2026-08-26 06:57:33
+mer_0077,retail,Kite Studio LLP,Kite Studio LLP,Kite Studio LLP,,1851626.54,False,2,pending,2026-08-19 18:57:33
+mer_0078,electronics,Greenline Logistics Enterprises,Greenline Logistics Enterprises,Greenline Logistics Enterprises,"crypto-adjacent business model, requires compliance sign-off",327360.76,True,0,pending,2026-08-19 16:57:33
+mer_0079,logistics,Silverline Textiles LLP,Silverline Textiles LLP,Silverline Textiles LLP,,1888218.67,False,1,pending,2026-08-22 13:57:33
+mer_0080,education,Silverline Textiles Pvt Ltd,Silvelrine Textiles Pvt Ltd,Silverline Textiles Pvt Ltd,,538217.41,True,2,pending,2026-08-15 21:57:33
