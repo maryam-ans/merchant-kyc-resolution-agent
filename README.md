@@ -23,7 +23,7 @@ Run it
 bash
 pip install -r requirements.txt --break-system-packages
 
-# Get a free key (no credit card needed) at https://aistudio.google.com
+Get a free key (no credit card needed) at https://aistudio.google.com
 export GEMINI_API_KEY=your_key_here
 
 python generate_data.py      # creates merchants.csv
