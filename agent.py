@@ -28,6 +28,7 @@ import csv
 import os
 import re
 import time
+import random
 from datetime import datetime
 from difflib import SequenceMatcher
 
@@ -83,6 +84,31 @@ def check_name_mismatch(pan_name, gst_name, bank_name):
         return True, "; ".join(mismatches)
     return False, ""
 
+def simulate_merchant_response(response_rate=0.75):
+    return random.random() < response_rate
+
+def verify_correction(merchant):
+    if not simulate_merchant_response():
+        return "no_response"
+    # 85% of merchants who respond correct it exactly right;
+    # 15% make a partial fix (e.g. only update one document, or make
+    # a typo while retyping the name) -- realistic, not everyone gets
+    # it perfectly right on the first try.
+    if random.random() < 0.85:
+        corrected_gst = merchant["pan_name"]
+        corrected_bank = merchant["pan_name"]
+    else:
+        corrected_gst = merchant["pan_name"]
+        corrected_bank = merchant["gst_name"]  # forgot to fix the bank record too
+
+    is_mismatch, _ = check_name_mismatch(
+        merchant["pan_name"], corrected_gst, corrected_bank
+    )
+
+    if is_mismatch:
+        return "still_mismatched"
+    else:
+        return "resolved"
 
 # ---------------------------------------------------------------------------
 # STEP 1b: SECONDARY DIAGNOSIS (supporting cast -- kept simple on purpose)
@@ -207,6 +233,7 @@ def main(in_path="merchants.csv", audit_path="audit_log.csv"):
     unblocked_gmv = 0.0
     unblocked_count = 0
     name_mismatch_caught = 0
+    resolved_count = 0
 
     for m in merchants:
         is_mismatch, details = check_name_mismatch(
@@ -226,6 +253,15 @@ def main(in_path="merchants.csv", audit_path="audit_log.csv"):
             action_detail = execute_action(m, category, action, details, client)
         else:
             action_detail = "SKIPPED (no API key)" if action != "no_action" else "n/a"
+        
+        verification_result = "n/a"
+        if category == "name_mismatch" and action == "send_name_fix_instructions":
+            if action_detail.startswith("FIX MESSAGE:"):
+                verification_result = verify_correction(m)
+            else:
+                verification_result = "fix_message_generation_failed"
+        if verification_result == "resolved":
+            resolved_count += 1
 
         # Count GMV as "unblocked" only for merchants we actively moved
         # forward (not for no_action / already-approved). Labeled clearly
@@ -244,6 +280,7 @@ def main(in_path="merchants.csv", audit_path="audit_log.csv"):
             "decision_reason": decision_reason,
             "action_detail": action_detail,
             "estimated_monthly_gmv": m["estimated_monthly_gmv"],
+            "verification_result": verification_result,
             "processed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         })
 
@@ -258,6 +295,7 @@ def main(in_path="merchants.csv", audit_path="audit_log.csv"):
     print(f"Estimated monthly GMV unblocked (NOT confirmed revenue): "
           f"Rs {unblocked_gmv:,.2f}")
     print(f"Full audit trail written to {audit_path}")
+    print(f"Of {name_mismatch_caught} name mismatches, {resolved_count} resolved after simulated correction.")
 
 
 if __name__ == "__main__":
