@@ -1,4 +1,5 @@
 import streamlit as st
+import altair as alt
 import pandas as pd
 
 df = pd.read_csv("audit_log.csv")
@@ -19,22 +20,33 @@ with col2:
 # st.metric("Name Mismatch Count", (df['category'] == "name_mismatch").sum())
 
 with col3:
-    revenue = df[df['action'] != 'no_action']
-    gmv_total = revenue['estimated_monthly_gmv'].sum()
-    st.metric("💰 Est. GMV Unblocked (Rs)", f"{gmv_total:,.0f}")
-
-with col4:
     resolved_count = len(df[df['verification_result'] == 'resolved'])
     resolved_pct = (resolved_count / len(name_mismatch_df) * 100) if len(name_mismatch_df) else 0
     st.metric("✅ Resolved After Verify", resolved_count, delta=f"{resolved_pct:.0f}% of mismatches")
 
+with col4:
+    revenue = df[df['action'] != 'no_action']
+    gmv_total = revenue['estimated_monthly_gmv'].sum()
+    st.metric("💰 Est. GMV Unblocked (Rs)", f"{gmv_total:,.0f}")
+
 st.caption("GMV figures are simulated estimates, not confirmed revenue.")
 st.divider()
 
-st.header("Failure Categories")
-counts = df['category'].value_counts().sort_values(ascending=False)  ##add sort to sort it
-st.bar_chart(counts)
-st.divider()
+counts = df['category'].value_counts().sort_values(ascending=False).reset_index()
+counts.columns = ['category', 'count']
+
+chart = alt.Chart(counts).mark_bar().encode(
+    x=alt.X(
+        'category:N',
+        sort='-y',
+        axis=alt.Axis(labelAngle=0)
+    ),
+    y='count:Q'
+).properties(
+    height=400
+)
+
+st.altair_chart(chart, use_container_width=True)
 
 st.header("🔍 Name Mismatch Spotlight")
 st.caption("Your flagship feature — deep dive into each caught mismatch")
